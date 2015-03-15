@@ -1,0 +1,29 @@
+/*COLORS*/
+/*BODY*/
+body {
+  color: #211f20;
+  background: #f19c28;
+}
+/*NAV*/
+nav,
+.top-bar {
+  color: #f19c28;
+  background: #a12e33;
+}
+nav h1,
+.top-bar h1 {
+  color: #f19c28;
+}
+nav h1 a,
+.top-bar h1 a {
+  color: #f19c28;
+}
+p {
+  color: #211f20;
+}
+a {
+  color: #211f20;
+}
+a:hover {
+  color: #ffffff;
+}

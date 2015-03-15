@@ -14,6 +14,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
 <![endif]-->
@@ -43,21 +44,21 @@
 			$sections = of_get_option('parallax_section');
 			if(of_get_option('enable_parallax')==1 && !empty($sections) && ('page' != get_option( 'show_on_front'))): ?>
 			<ul class="nav single-page-nav">
-<!--			--><?php
-//				if(of_get_option('show_slider')== "yes") : ?>
-<!--					<li class="current"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--#main-slider">--><?php //_e( 'Home' ,'accesspress_parallax'); ?><!--</a></li>-->
-<!--				--><?php //endif;
-//
-//				foreach ($sections as $single_sections):
-//					if($single_sections['layout'] != "action_template" && $single_sections['layout'] != "blank_template" && $single_sections['layout'] != "googlemap_template" && !empty($single_sections['page'])) :
-//					$title = get_the_title($single_sections['page']); ?>
-<!--					<li><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--#section---><?php //echo $single_sections['page']; ?><!--">--><?php //echo $title; ?><!--</a></li>-->
-<!--					--><?php //
-//					endif;
-//				endforeach; ?>
+			<?php
+				if(of_get_option('show_slider')== "yes") : ?>
+					<li class="current"><a href="<?php echo esc_url( home_url( '/' ) ); ?>#main-slider"><?php _e( 'Home' ,'accesspress_parallax'); ?></a></li>
+				<?php endif;
+
+				foreach ($sections as $single_sections):
+					if($single_sections['layout'] != "action_template" && $single_sections['layout'] != "blank_template" && $single_sections['layout'] != "googlemap_template" && !empty($single_sections['page'])) :
+					$title = get_the_title($single_sections['page']); ?>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#section-<?php echo $single_sections['page']; ?>"><?php echo $title; ?></a></li>
+					<?php
+					endif;
+				endforeach; ?>
 			</ul>
 
-			<?php //else:
+			<?php else:
 				wp_nav_menu( array( 
 					'theme_location' => 'primary' , 
 					'container'      => '',

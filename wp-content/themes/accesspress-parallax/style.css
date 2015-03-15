@@ -532,10 +532,12 @@ Posts and pages
 }
 .site-title a{
 	text-decoration: none;
+	color:#f9da0c;
 }
 .site-description{
 	font-size: 14px;
 	font-style: italic;
+	color:#fff !important;
 }
 .hentry {
 	margin: 0 0 20px;
@@ -582,7 +584,7 @@ Posts and pages
 	margin-left: 0;
 }
 .entry-header h1.entry-title a{
-	color: #333;
+	color: #f9da0c;
 	text-decoration:none;
 }
 .posted-on{
@@ -797,7 +799,7 @@ textarea#comment{
 	top: -20px;
 	color:#FFF;
 	font-size: 13px;
-	width: :250px;
+	width:250px;
 	margin-left: -125px;
 }
 .comment-awaiting-moderation + br{
@@ -931,9 +933,9 @@ Main Header
 #masthead{
 	width: 100%;
 	z-index: 99999;
-	background: #FFF;
+	background:#7A1501;
 	padding: 10px 0;
-	border-bottom: 3px solid #E66432;
+	border-bottom: 3px solid #BA4F28;
 	position: relative;
 }
 #masthead.logo-top{
@@ -980,7 +982,7 @@ body.parallax-on .wpcf7-not-valid-tip{
 .main-navigation > ul > li {
 	float: left;
 	position: relative;
-	font-family: 'Oxygen', sans-serif;	
+	font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 .main-navigation > ul > li > a{
@@ -989,12 +991,12 @@ body.parallax-on .wpcf7-not-valid-tip{
 	padding: 5px 15px;
 }
 .main-navigation > ul > li.current a{
-	color: #E66432;
+	color: #f9da0c;
 }
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	color:#333;
+	color:#f9da0c;
 }
 .main-navigation ul ul {
 	background: #FFF;
@@ -1022,14 +1024,14 @@ body.parallax-on .wpcf7-not-valid-tip{
 	border:none;
 }
 .main-navigation li:hover > a {
-	color: #E66432;
+	color: #f9da0c;
 }
 .main-navigation ul li:hover > ul {
 	display: block;
 }
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a {
-	color: #E66432;
+	color:#f9da0c;
 }
 /* Small menu */
 .menu-toggle {
@@ -1075,7 +1077,7 @@ body.parallax-on .wpcf7-not-valid-tip{
 	color: #FFF;
 	text-decoration: none;
 	font-size: 14px;
-	font-family: "Oxygen",sans-serif;
+	font-family: "Lato",sans-serif;
 	display: inline-block;
 }
 
@@ -1858,4 +1860,12 @@ Responsive grid for pages
     margin-left: 0;
   }
 
+}
+
+
+.block-title{
+	font-weight: 600;
+	text-align: center;
+	font-size: 2em;
+	
 }

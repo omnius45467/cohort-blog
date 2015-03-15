@@ -35,7 +35,7 @@
 
 				<?php 
 				if($layout != "action_template" && $layout != "blank_template" && $layout != "googlemap_template"): ?>
-					<h1><span><?php echo $page->post_title; ?></span></h1>
+					<h2><span class="block-title"><?php echo $page->post_title; ?></span></h2>
 
 					<div class="parallax-content">
 					<?php if($page->post_content != "") : ?>
